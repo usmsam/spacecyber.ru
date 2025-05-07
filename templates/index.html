@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nerion Partners - Global Payment Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+      </div>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="particles" id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">Nerion<span>Partners</span></a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#industries">Industries</a>
+          <a href="#why-choose">Why Choose Us</a>
+          <a href="#contact">Contact</a>
+          <a href="#insights">Insights</a>
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background">
+        <div class="bg-slide active" style="background-image: url('{{ url_for('static', filename='images/hero-1.jpg') }}')"></div>
+        <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-2.jpg') }}')"></div>
+        <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-3.jpg') }}')"></div>
+        <div class="bg-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="rotating-text" data-words="Card acquiring,Global payouts,Every business">Global Payment</span> <span  style="color: white;"> Solutions with
+            <span>Trusted Banking Partners</span>
+          </h1>
+          <p class="hero-subtitle">
+            We connect businesses with leading acquiring banks worldwide,
+            providing seamless access to payment solutions tailored to your needs.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-hero btn-hero-primary">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="btn-hero btn-hero-secondary">
+              Contact Us <i class="fas fa-envelope"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow-down"></div>
+      </div>
+    </section>
+
+    <!-- Partners Marquee Section -->
+<div class="partners-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Partners</h2>
+    </div>
+    
+    <div class="marquee">
+      <div class="marquee__content">
+        <!-- Первый набор логотипов -->
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbe77c0f6fe9b0388e_logo_header-item%2001.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcb7e99554aea7240fb_logo_header-item%2002.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbf222b925d6626047_logo_header-item%2003.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbbb32a8f605db2f0b_logo_header-item%2004.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcb8f796c73e3a7fe57_logo_header-item%2005.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbb70ffad4025e2f5a_logo_header-item%2006.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbaea7d0d79a03c091_logo_header-item%2007.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcb95cd917c78cf7c97_logo_header-item%2008.avif" alt="Partner Logo">
+        
+        <!-- Повтор для бесшовной анимации -->
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbe77c0f6fe9b0388e_logo_header-item%2001.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcb7e99554aea7240fb_logo_header-item%2002.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbf222b925d6626047_logo_header-item%2003.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbbb32a8f605db2f0b_logo_header-item%2004.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcb8f796c73e3a7fe57_logo_header-item%2005.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbb70ffad4025e2f5a_logo_header-item%2006.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcbaea7d0d79a03c091_logo_header-item%2007.avif" alt="Partner Logo">
+        <img src="https://cdn.prod.website-files.com/67111bf5db783f43508ecce3/67a48dcb95cd917c78cf7c97_logo_header-item%2008.avif" alt="Partner Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Key <span>Benefits</span></h2>
+          <p class="section-subtitle">
+            Why businesses choose our acquiring solutions
+          </p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Access to Top Banks</h3>
+            <p>
+              Access a network of top-tier acquiring banks with competitive
+              rates and terms.
+            </p>
+            <div class="wave"></div>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Multi-Currency Solutions</h3>
+            <p>
+              Process payments in multiple currencies with seamless cross-border
+              transactions.
+            </p>
+            <div class="wave"></div>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Secure & Compliant</h3>
+            <p>
+              Robust security measures and compliance with international
+              regulations.
+            </p>
+            <div class="wave"></div>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Optimized Approval</h3>
+            <p>
+              Higher approval rates through our specialized banking
+              partnerships.
+            </p>
+            <div class="wave"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-image">
+          <div class="about-card">
+            <div class="card-face front">
+              <img
+                src="https://i.ibb.co/b5p17SY3/f8e71b0b-2c67-4a45-a785-c942ad59e285.jpg" alt="f8e71b0b-2c67-4a45-a785-c942ad59e285"
+                alt="Banking Partners"
+              />
+            </div>
+            <div class="card-face back">
+              <h3>Our Banking Network</h3>
+              <p>
+                We collaborate with leading financial institutions worldwide to
+                provide you with the best acquiring solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-header">
+            <h2 class="section-title">About <span>Us</span></h2>
+          </div>
+          <div class="about-text">
+            <h3>Who We Are</h3>
+            <p>
+              We are a trusted partner, enabling businesses to connect with a
+              network of acquiring banks worldwide. Through our partnerships, we
+              help merchants access card acquiring services, global payment
+              processing, and related financial solutions without the complexity
+              of dealing with multiple providers.
+            </p>
+
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to simplify payment acquiring for businesses by
+              leveraging our extensive network of partner banks. We help
+              merchants optimize their payment infrastructure, ensuring high
+              approval rates, compliance, and cost efficiency.
+            </p>
+
+            <h3>Our Network of Partner Banks</h3>
+            <p>
+              We collaborate with a select group of reputable acquiring banks,
+              offering businesses the flexibility to choose the right financial
+              partner based on their specific needs, industry, and geography.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our <span>Services</span></h2>
+          <p class="section-subtitle">
+            Comprehensive payment acquiring solutions
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h3>Acquiring & Payment Processing</h3>
+            <p>
+              We connect businesses with acquiring banks that provide card
+              acceptance, multi-currency payment solutions, and support for
+              alternative payment methods.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h3>Risk & Compliance Solutions</h3>
+            <p>
+              Our partner banks ensure robust risk management, fraud prevention,
+              and compliance with international regulations, including KYC and
+              AML requirements.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Customized Payment Solutions</h3>
+            <p>
+              Through our banking network, we provide tailored acquiring
+              solutions for high-growth businesses, including e-commerce,
+              fintech, and high-risk industries.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3>Cross-Border Payment Services</h3>
+            <p>
+              Our partner banks facilitate smooth cross-border transactions,
+              ensuring businesses can scale internationally with ease.
+            </p>
+            <div class="service-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Industries <span>We Serve</span></h2>
+          <p class="section-subtitle">
+            We help businesses across multiple industries secure the right
+            acquiring partnerships
+          </p>
+        </div>
+        <div class="industries-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="ecommerce">
+              E-commerce
+            </button>
+            <button class="tab-btn" data-tab="fintech">Fintech</button>
+            <button class="tab-btn" data-tab="saas">SaaS</button>
+            <button class="tab-btn" data-tab="highrisk">High-Risk</button>
+          </div>
+          <div class="tab-contents">
+            <div class="tab-content active" id="ecommerce">
+              <div class="tab-image">
+                <img src="https://i.ibb.co/fzYQjXfW/4c0ec93a-ed4a-4e6a-a6d9-ed526b574cf0.jpg"
+                  alt="E-commerce"
+                />
+              </div>
+              <div class="tab-text">
+                <h3>E-commerce & Online Retail</h3>
+                <p>
+                  Fast, secure, and scalable card acquiring solutions tailored
+                  for online merchants. We help e-commerce businesses optimize
+                  their payment infrastructure to maximize conversions and
+                  minimize declines.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fas fa-check"></i> High approval rates for online
+                    transactions
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Support for all major card
+                    schemes
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Fraud prevention and chargeback
+                    management
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Multi-currency processing
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content" id="fintech">
+              <div class="tab-image">
+                <img
+                  src="https://i.ibb.co/bMxZrkvT/a1e15974-6595-4e86-be44-b1e1551e9470.jpg" alt="a1e15974-6595-4e86-be44-b1e1551e9470"
+                  alt="Fintech"
+                />
+              </div>
+              <div class="tab-text">
+                <h3>Fintech & Financial Services</h3>
+                <p>
+                  Reliable infrastructure for digital payments and financial
+                  innovation. Our banking partners understand the unique needs
+                  of fintech companies and provide specialized acquiring
+                  solutions.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fas fa-check"></i> API-first acquiring solutions
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Support for emerging payment
+                    methods
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Regulatory compliance expertise
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Fast onboarding for fintech
+                    startups
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content" id="saas">
+              <div class="tab-image">
+                <img
+                  src="https://i.ibb.co/Kc6vkH5p/779a2375-ef73-424d-8634-65d53b4cba7b.jpg" alt="779a2375-ef73-424d-8634-65d53b4cba7b"
+                  alt="SaaS"
+                />
+              </div>
+              <div class="tab-text">
+                <h3>SaaS & Subscription Businesses</h3>
+                <p>
+                  Optimized approval rates and recurring billing solutions for
+                  subscription-based models. We help SaaS companies reduce churn
+                  and improve payment success rates.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fas fa-check"></i> Recurring billing optimization
+                  </li>
+                  <li><i class="fas fa-check"></i> Card updater services</li>
+                  <li><i class="fas fa-check"></i> Dunning management</li>
+                  <li>
+                    <i class="fas fa-check"></i> Global subscription management
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content" id="highrisk">
+              <div class="tab-image">
+                <img
+                  src="https://i.ibb.co/7tLX6qvK/9f6d1cf6-8673-4794-bb0a-aa2a92adccea.jpg" alt="9f6d1cf6-8673-4794-bb0a-aa2a92adccea"
+                  alt="High-Risk"
+                />
+              </div>
+              <div class="tab-text">
+                <h3>High-Risk Businesses</h3>
+                <p>
+                  Access to acquiring solutions tailored to businesses with
+                  complex regulatory and compliance requirements. We specialize
+                  in finding banking partners for challenging industries.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fas fa-check"></i> Specialized high-risk acquiring
+                  </li>
+                  <li><i class="fas fa-check"></i> Chargeback mitigation</li>
+                  <li><i class="fas fa-check"></i> Reserve management</li>
+                  <li>
+                    <i class="fas fa-check"></i> Industry-specific compliance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why <span>Choose Us?</span></h2>
+          <p class="section-subtitle">
+            The advantages of working with our network
+          </p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-number">01</div>
+            <h3>Global Bank Network</h3>
+            <p>
+              We work with multiple acquiring banks worldwide, giving you
+              flexibility and choice to find the perfect financial partner.
+            </p>
+            <div class="why-line"></div>
+          </div>
+          <div class="why-card">
+            <div class="why-number">02</div>
+            <h3>Fast Onboarding</h3>
+            <p>
+              Our strong relationships with partner banks enable fast approvals
+              and efficient onboarding processes for your business.
+            </p>
+            <div class="why-line"></div>
+          </div>
+          <div class="why-card">
+            <div class="why-number">03</div>
+            <h3>Competitive Rates</h3>
+            <p>
+              We negotiate favorable terms with our banking partners to provide
+              optimized pricing and cost-efficient solutions.
+            </p>
+            <div class="why-line"></div>
+          </div>
+          <div class="why-card">
+            <div class="why-number">04</div>
+            <h3>Compliance Expertise</h3>
+            <p>
+              Our partner banks ensure compliance with local and international
+              regulations, reducing your operational burden.
+            </p>
+            <div class="why-line"></div>
+          </div>
+          <div class="why-card">
+            <div class="why-number">05</div>
+            <h3>Global Scalability</h3>
+            <p>
+              We help businesses expand globally with multi-currency and
+              cross-border payment capabilities through our banking network.
+            </p>
+            <div class="why-line"></div>
+          </div>
+          <div class="why-card">
+            <div class="why-number">06</div>
+            <h3>Dedicated Support</h3>
+            <p>
+              Our team provides personalized support to help you navigate the
+              complexities of payment acquiring and banking relationships.
+            </p>
+            <div class="why-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="section-header">
+            <h2 class="section-title">Get in <span>Touch</span></h2>
+            <p class="section-subtitle">
+              Have questions or need assistance? Reach out to us today.
+            </p>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Company Name" />
+            </div>
+            <div class="form-group">
+              <select>
+                <option value="">What are you interested in?</option>
+                <option value="acquiring">Payment Acquiring</option>
+                <option value="processing">Payment Processing</option>
+                <option value="crossborder">Cross-Border Payments</option>
+                <option value="other">Other Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview" id="insights">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Latest <span>Insights</span></h2>
+          <p class="section-subtitle">
+            Stay informed with payment industry trends and updates
+          </p>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Blog 1"
+              />
+              <div class="blog-date">
+                <span>15</span>
+                <span>Jun</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <h3>The Future of Payment Acquiring: Trends & Innovations</h3>
+              <p>
+                Explore the latest developments in payment acquiring technology
+                and what they mean for your business.
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Blog 2"
+              />
+              <div class="blog-date">
+                <span>28</span>
+                <span>May</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <h3>How to Choose the Right Acquiring Bank for Your Business</h3>
+              <p>
+                Key factors to consider when selecting an acquiring bank partner
+                for your payment processing needs.
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="blog-image">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Blog 3"
+              />
+              <div class="blog-date">
+                <span>05</span>
+                <span>May</span>
+              </div>
+            </div>
+            <div class="blog-content">
+              <h3>Navigating Compliance & Risk in Global Payments</h3>
+              <p>
+                Understanding the regulatory landscape and risk management
+                strategies for international payments.
+              </p>
+              <a href="#" class="read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Nerion Partners</h3>
+            <p>
+              Connecting businesses with trusted acquiring banks worldwide for
+              seamless payment solutions.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#industries">Industries</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Payment Acquiring</a></li>
+              <li><a href="#">Risk Management</a></li>
+              <li><a href="#">Cross-Border Payments</a></li>
+              <li><a href="#">Compliance Solutions</a></li>
+              <li><a href="#">Custom Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Info</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Financial District, NY
+                10005
+              </li>
+              <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@nerionpartners.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Nerion Partners. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
+</html>
