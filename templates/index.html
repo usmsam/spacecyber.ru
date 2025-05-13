@@ -58,9 +58,9 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-background">
-      <div class="bg-slide active" style="background-image: url('/static/images/hero-1.jpg')"></div>
-      <div class="bg-slide" style="background-image: url('/static/images/hero-2.jpg')"></div>
-      <div class="bg-slide" style="background-image: url('/static/images/hero-3.jpg')"></div>
+      <div class="bg-slide active" style="background-image: url('{{ url_for('static', filename='images/hero-1.jpg') }}')"></div>
+      <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-2.jpg') }}')"></div>
+      <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-3.jpg') }}')"></div>
       <div class="bg-overlay"></div>
     </div>
 
