@@ -52,7 +52,12 @@ section {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 15px;
@@ -165,7 +170,7 @@ img {
   padding: 20px 0;
   z-index: 1000;
   background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
 
@@ -182,9 +187,13 @@ img {
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--dark);
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.logo i{
+  font-size: 40px;
 }
 
 .logo span {
@@ -291,7 +300,7 @@ img {
 .hero-title {
   font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title span {
@@ -314,7 +323,7 @@ img {
   font-size: 18px;
   color: white;
   margin-bottom: 30px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-buttons {
@@ -357,16 +366,54 @@ img {
   animation: rotate 20s linear infinite;
 }
 
-.ring:nth-child(1) { transform: rotateX(75deg); }
-.ring:nth-child(2) { transform: rotateX(75deg) rotateY(30deg); animation-delay: -2s; }
-.ring:nth-child(3) { transform: rotateX(75deg) rotateY(60deg); animation-delay: -4s; }
-.ring:nth-child(4) { transform: rotateX(75deg) rotateY(90deg); animation-delay: -6s; }
-.ring:nth-child(5) { transform: rotateX(75deg) rotateY(120deg); animation-delay: -8s; }
-.ring:nth-child(6) { transform: rotateX(75deg) rotateY(150deg); animation-delay: -10s; }
-.ring:nth-child(7) { transform: rotateX(30deg); animation-delay: -3s; }
-.ring:nth-child(8) { transform: rotateX(60deg); animation-delay: -6s; }
-.ring:nth-child(9) { transform: rotateX(90deg); animation-delay: -9s; }
-.ring:nth-child(10) { transform: rotateX(120deg); animation-delay: -12s; }
+.ring:nth-child(1) {
+  transform: rotateX(75deg);
+}
+
+.ring:nth-child(2) {
+  transform: rotateX(75deg) rotateY(30deg);
+  animation-delay: -2s;
+}
+
+.ring:nth-child(3) {
+  transform: rotateX(75deg) rotateY(60deg);
+  animation-delay: -4s;
+}
+
+.ring:nth-child(4) {
+  transform: rotateX(75deg) rotateY(90deg);
+  animation-delay: -6s;
+}
+
+.ring:nth-child(5) {
+  transform: rotateX(75deg) rotateY(120deg);
+  animation-delay: -8s;
+}
+
+.ring:nth-child(6) {
+  transform: rotateX(75deg) rotateY(150deg);
+  animation-delay: -10s;
+}
+
+.ring:nth-child(7) {
+  transform: rotateX(30deg);
+  animation-delay: -3s;
+}
+
+.ring:nth-child(8) {
+  transform: rotateX(60deg);
+  animation-delay: -6s;
+}
+
+.ring:nth-child(9) {
+  transform: rotateX(90deg);
+  animation-delay: -9s;
+}
+
+.ring:nth-child(10) {
+  transform: rotateX(120deg);
+  animation-delay: -12s;
+}
 
 .core {
   width: 100px;
@@ -396,7 +443,9 @@ img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.visa, .mastercard, .amex {
+.visa,
+.mastercard,
+.amex {
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -573,6 +622,7 @@ img {
     transform: scale(0, 0);
     opacity: 1;
   }
+
   100% {
     transform: scale(20, 20);
     opacity: 0;
@@ -610,10 +660,21 @@ img {
   animation: slideFromBottom 0.8s ease-out forwards;
 }
 
-.benefit-card:nth-child(1) { animation-delay: 0.2s; }
-.benefit-card:nth-child(2) { animation-delay: 0.4s; }
-.benefit-card:nth-child(3) { animation-delay: 0.6s; }
-.benefit-card:nth-child(4) { animation-delay: 0.8s; }
+.benefit-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.benefit-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.benefit-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.benefit-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
 .benefit-card:hover {
   transform: translateY(-10px);
@@ -786,12 +847,29 @@ img {
   transform: translateY(0);
 }
 
-.about.animated .about-text h3:nth-child(1) { transition-delay: 0.4s; }
-.about.animated .about-text p:nth-child(2) { transition-delay: 0.6s; }
-.about.animated .about-text h3:nth-child(3) { transition-delay: 0.8s; }
-.about.animated .about-text p:nth-child(4) { transition-delay: 1s; }
-.about.animated .about-text h3:nth-child(5) { transition-delay: 1.2s; }
-.about.animated .about-text p:nth-child(6) { transition-delay: 1.4s; }
+.about.animated .about-text h3:nth-child(1) {
+  transition-delay: 0.4s;
+}
+
+.about.animated .about-text p:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.about.animated .about-text h3:nth-child(3) {
+  transition-delay: 0.8s;
+}
+
+.about.animated .about-text p:nth-child(4) {
+  transition-delay: 1s;
+}
+
+.about.animated .about-text h3:nth-child(5) {
+  transition-delay: 1.2s;
+}
+
+.about.animated .about-text p:nth-child(6) {
+  transition-delay: 1.4s;
+}
 
 .about-text h3:before {
   content: "";
@@ -834,10 +912,21 @@ img {
   transform: rotateY(0);
 }
 
-.services.animated .service-card:nth-child(1) { transition-delay: 0.2s; }
-.services.animated .service-card:nth-child(2) { transition-delay: 0.4s; }
-.services.animated .service-card:nth-child(3) { transition-delay: 0.6s; }
-.services.animated .service-card:nth-child(4) { transition-delay: 0.8s; }
+.services.animated .service-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.services.animated .service-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.services.animated .service-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.services.animated .service-card:nth-child(4) {
+  transition-delay: 0.8s;
+}
 
 .service-card:hover {
   transform: translateY(-10px);
@@ -1046,7 +1135,7 @@ img {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: 0.5s;
 }
 
@@ -1059,12 +1148,29 @@ img {
   transform: translateY(0);
 }
 
-.why-choose.animated .why-card:nth-child(1) { transition-delay: 0.2s; }
-.why-choose.animated .why-card:nth-child(2) { transition-delay: 0.4s; }
-.why-choose.animated .why-card:nth-child(3) { transition-delay: 0.6s; }
-.why-choose.animated .why-card:nth-child(4) { transition-delay: 0.8s; }
-.why-choose.animated .why-card:nth-child(5) { transition-delay: 1.0s; }
-.why-choose.animated .why-card:nth-child(6) { transition-delay: 1.2s; }
+.why-choose.animated .why-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.why-choose.animated .why-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.why-choose.animated .why-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.why-choose.animated .why-card:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+.why-choose.animated .why-card:nth-child(5) {
+  transition-delay: 1.0s;
+}
+
+.why-choose.animated .why-card:nth-child(6) {
+  transition-delay: 1.2s;
+}
 
 .why-card:hover {
   transform: translateY(-10px);
@@ -1156,10 +1262,10 @@ img {
   pointer-events: none;
 }
 
-.form-group input:focus + label,
-.form-group input:valid + label,
-.form-group textarea:focus + label,
-.form-group textarea:valid + label {
+.form-group input:focus+label,
+.form-group input:valid+label,
+.form-group textarea:focus+label,
+.form-group textarea:valid+label {
   top: -10px;
   left: 10px;
   font-size: 12px;
@@ -1258,9 +1364,17 @@ img {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.blog-preview.animated .blog-card:nth-child(1) { transition-delay: 0.2s; }
-.blog-preview.animated .blog-card:nth-child(2) { transition-delay: 0.4s; }
-.blog-preview.animated .blog-card:nth-child(3) { transition-delay: 0.6s; }
+.blog-preview.animated .blog-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.blog-preview.animated .blog-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.blog-preview.animated .blog-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
 
 .blog-card:hover {
   transform: translateY(-10px);
@@ -1517,13 +1631,33 @@ img {
   animation: loader 1.2s infinite ease-in-out;
 }
 
-.loader-square:nth-child(1) { animation-delay: 0s; }
-.loader-square:nth-child(2) { animation-delay: 0.1s; }
-.loader-square:nth-child(3) { animation-delay: 0.2s; }
-.loader-square:nth-child(4) { animation-delay: 0.3s; }
-.loader-square:nth-child(5) { animation-delay: 0.4s; }
-.loader-square:nth-child(6) { animation-delay: 0.5s; }
-.loader-square:nth-child(7) { animation-delay: 0.6s; }
+.loader-square:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader-square:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loader-square:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loader-square:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.loader-square:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.loader-square:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.loader-square:nth-child(7) {
+  animation-delay: 0.6s;
+}
 
 /* Particles */
 .particles {
@@ -1537,9 +1671,13 @@ img {
 
 /* ==================== ANIMATIONS ==================== */
 @keyframes loader {
-  0%, 40%, 100% {
+
+  0%,
+  40%,
+  100% {
     transform: scaleY(0.5);
   }
+
   20% {
     transform: scaleY(1);
   }
@@ -1549,15 +1687,19 @@ img {
   from {
     transform: rotateX(75deg) rotateY(0deg);
   }
+
   to {
     transform: rotateX(75deg) rotateY(360deg);
   }
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -1568,6 +1710,7 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
+
   100% {
     opacity: 0;
     transform: translateY(10px);
@@ -1575,12 +1718,19 @@ img {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: rotate(45deg) translateY(0);
   }
+
   40% {
     transform: rotate(45deg) translateY(-10px);
   }
+
   60% {
     transform: rotate(45deg) translateY(-5px);
   }
@@ -1590,9 +1740,11 @@ img {
   0% {
     box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 15px rgba(108, 92, 231, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(108, 92, 231, 0);
   }
@@ -1602,6 +1754,7 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1612,6 +1765,7 @@ img {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1623,6 +1777,7 @@ img {
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1641,6 +1796,7 @@ img {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1705,12 +1861,12 @@ img {
   body {
     padding-top: 70px;
   }
-  
+
   .navbar {
     height: 70px;
     padding: 15px 0;
   }
-  
+
   .hero {
     height: calc(100vh - 70px);
     margin-top: -70px;
@@ -1776,12 +1932,12 @@ img {
   body {
     padding-top: 60px;
   }
-  
+
   .navbar {
     height: 60px;
     padding: 10px 0;
   }
-  
+
   .hero {
     height: calc(100vh - 60px);
     margin-top: -60px;
@@ -1941,18 +2097,21 @@ img {
   }
 
   .hero-title {
-    margin-bottom: 1.5rem; /* Увеличиваем отступ снизу заголовка */
+    margin-bottom: 1.5rem;
+    /* Увеличиваем отступ снизу заголовка */
     line-height: 1.3;
   }
 
   .hero-subtitle {
-    margin-bottom: 3rem; /* В 2 раза больше чем у заголовка (1.5rem × 2) */
+    margin-bottom: 3rem;
+    /* В 2 раза больше чем у заголовка (1.5rem × 2) */
     font-size: 1.1rem;
     line-height: 1.6;
   }
 
   .hero-buttons {
-    margin-top: 2rem; /* Дополнительный отступ сверху для кнопок */
+    margin-top: 2rem;
+    /* Дополнительный отступ сверху для кнопок */
     gap: 20px;
   }
 }
@@ -1976,7 +2135,8 @@ img {
   }
 
   .hero-subtitle {
-    margin-bottom: 2rem; /* Сохраняем пропорцию 1:2 */
+    margin-bottom: 2rem;
+    /* Сохраняем пропорцию 1:2 */
     font-size: 1rem;
   }
 
@@ -2006,12 +2166,15 @@ img {
 
 /* Увеличиваем отступ между заголовком и подзаголовком */
 .hero-title {
-  margin-bottom: 2rem; /* Увеличиваем отступ под заголовком */
+  margin-bottom: 2rem;
+  /* Увеличиваем отступ под заголовком */
 }
 
 .hero-subtitle {
-  margin-top: 4rem; /* Делаем в 2 раза больше чем отступ заголовка */
-  margin-bottom: 3rem; /* Отступ перед кнопками */
+  margin-top: 4rem;
+  /* Делаем в 2 раза больше чем отступ заголовка */
+  margin-bottom: 3rem;
+  /* Отступ перед кнопками */
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -2021,9 +2184,10 @@ img {
   .hero-title {
     margin-bottom: 1.5rem;
   }
-  
+
   .hero-subtitle {
-    margin-top: 3rem; /* Сохраняем пропорцию */
+    margin-top: 3rem;
+    /* Сохраняем пропорцию */
     margin-bottom: 2rem;
     font-size: 1rem;
   }
@@ -2032,20 +2196,26 @@ img {
 /* Убираем серый фон на мобильных устройствах */
 @media (max-width: 768px) {
   .hero-content {
-    background: transparent !important; /* Полностью прозрачный фон */
-    backdrop-filter: none !important; /* Убираем размытие */
-    padding: 20px 0 !important; /* Оставляем только вертикальные отступы */
+    background: transparent !important;
+    /* Полностью прозрачный фон */
+    backdrop-filter: none !important;
+    /* Убираем размытие */
+    padding: 20px 0 !important;
+    /* Оставляем только вертикальные отступы */
   }
-  
+
   .hero-title,
   .hero-subtitle {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Добавляем тень тексту для лучшей читаемости */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    /* Добавляем тень тексту для лучшей читаемости */
   }
 }
+
 /* Partners Section Styles */
 .partners-section {
   padding: 60px 0;
-  background: #fff; /* или любой нужный вам фон */
+  background: #fff;
+  /* или любой нужный вам фон */
 }
 
 .section-header {
@@ -2074,7 +2244,8 @@ img {
 }
 
 .marquee__content img {
-  height: 40px; /* Фиксированная высота логотипов */
+  height: 40px;
+  /* Фиксированная высота логотипов */
   width: auto;
   margin: 0 30px;
   filter: grayscale(100%);
@@ -2091,6 +2262,7 @@ img {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -2101,12 +2273,12 @@ img {
   .partners-section {
     padding: 40px 0;
   }
-  
+
   .marquee__content img {
     height: 30px;
     margin: 0 20px;
   }
-  
+
   .section-title {
     font-size: 20px;
   }
@@ -2151,14 +2323,16 @@ img {
 .tab-image {
   position: relative;
   overflow: hidden;
-  transform: translateZ(0); /* Аппаратное ускорение */
+  transform: translateZ(0);
+  /* Аппаратное ускорение */
 }
 
 .tab-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  will-change: transform; /* Оптимизация анимации */
+  will-change: transform;
+  /* Оптимизация анимации */
   transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform-origin: center center;
 }
