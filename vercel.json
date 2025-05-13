@@ -1,11 +1,11 @@
 {
-  "builds": [{ "src": "app.py", "use": "@vercel/python" }],
   "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/(.*)", "dest": "app.py" }
   ],
   "functions": {
     "app.py": {
+      "runtime": "python3.9",
       "includeFiles": "templates/** static/**"
     }
   }
