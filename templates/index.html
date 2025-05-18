@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nerion - Global Payment Solutions</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/benefits.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
@@ -14,8 +17,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -58,9 +60,13 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-background">
-      <div class="bg-slide active" style="background-image: url('{{ url_for('static', filename='/hero-1.jpg') }}')"></div>
-      <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='/hero-2.jpg') }}')"></div>
-      <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='/hero-3.jpg') }}')"></div>
+      <div class="bg-slide active"
+        style="background-image: url('{{ url_for('static', filename='images/hero-1.jpg') }}')">
+      </div>
+      <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-2.jpg') }}')">
+      </div>
+      <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-3.jpg') }}')">
+      </div>
       <div class="bg-overlay"></div>
     </div>
 
@@ -98,7 +104,7 @@
   <div class="partners-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Our Partners</h2>
+        <h2 class="section-title">Our <span>Partners</span></h2>
       </div>
 
       <div class="marquee">
@@ -168,105 +174,133 @@
           Why businesses choose our acquiring solutions
         </p>
       </div>
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
-          <h3>Access to Top Banks</h3>
-          <p>
-            Access a network of top-tier acquiring banks with competitive
-            rates and terms.
-          </p>
-          <div class="wave"></div>
+
+      <div class="benefits-showcase">
+        <!-- Background elements -->
+        <div class="bg-elements">
+          <div class="bg-circle circle-1"></div>
+          <div class="bg-circle circle-2"></div>
+          <div class="bg-circle circle-3"></div>
+          <div class="bg-glow glow-1"></div>
+          <div class="bg-glow glow-2"></div>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <i class="fas fa-globe"></i>
+
+        <!-- Organic shaped benefit items -->
+        <div class="benefit-item benefit-1" data-index="0">
+          <div class="benefit-content">
+            <div class="icon-container">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="text-container">
+              <h3>Access to Top Banks</h3>
+              <p>Access a network of top-tier acquiring banks with competitive rates and terms.</p>
+            </div>
           </div>
-          <h3>Multi-Currency Solutions</h3>
-          <p>
-            Process payments in multiple currencies with seamless cross-border
-            transactions.
-          </p>
-          <div class="wave"></div>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <i class="fas fa-shield-alt"></i>
+
+        <div class="benefit-item benefit-2" data-index="1">
+          <div class="benefit-content">
+            <div class="icon-container">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="text-container">
+              <h3>Multi-Currency Solutions</h3>
+              <p>Process payments in multiple currencies with seamless cross-border transactions.</p>
+            </div>
           </div>
-          <h3>Secure & Compliant</h3>
-          <p>
-            Robust security measures and compliance with international
-            regulations.
-          </p>
-          <div class="wave"></div>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <i class="fas fa-chart-line"></i>
+
+        <div class="benefit-item benefit-3" data-index="2">
+          <div class="benefit-content">
+            <div class="icon-container">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="text-container">
+              <h3>Secure & Compliant</h3>
+              <p>Robust security measures and compliance with international regulations.</p>
+            </div>
           </div>
-          <h3>Optimized Approval</h3>
-          <p>
-            Higher approval rates through our specialized banking
-            partnerships.
-          </p>
-          <div class="wave"></div>
+        </div>
+
+        <div class="benefit-item benefit-4" data-index="3">
+          <div class="benefit-content">
+            <div class="icon-container">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="text-container">
+              <h3>Optimized Approval</h3>
+              <p>Higher approval rates through our specialized banking partnerships.</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Floating particles -->
+      <canvas id="particles-canvas"></canvas>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-image">
-        <div class="about-card">
-          <div class="card-face front">
-            <img src="https://i.ibb.co/b5p17SY3/f8e71b0b-2c67-4a45-a785-c942ad59e285.jpg"
-              alt="f8e71b0b-2c67-4a45-a785-c942ad59e285" alt="Banking Partners" />
+<!-- About Section -->
+<section class="about-section-custom" id="about-section-custom">
+  <div class="about-container-custom">
+    <div class="about-header-custom">
+      <h2 class="about-title-custom">About <span>Us</span></h2>
+    </div>
+    
+    <div class="about-content-custom">
+      <!-- Central axis -->
+      <div class="about-central-axis-custom"></div>
+      
+      <!-- Left side content -->
+      <div class="about-left-custom">
+        <div class="about-block-custom" id="about-who-custom">
+          <div class="about-block-content-custom">
+            <h3>Who We Are</h3>
+            <p>We are a trusted partner, enabling businesses to connect with a network of acquiring banks worldwide. Through our partnerships, we help merchants access card acquiring services, global payment processing, and related financial solutions without the complexity of dealing with multiple providers.</p>
           </div>
-          <div class="card-face back">
-            <h3>Our Banking Network</h3>
-            <p>
-              We collaborate with leading financial institutions worldwide to
-              provide you with the best acquiring solutions.
-            </p>
+          <div class="about-connector-custom"></div>
+        </div>
+        
+        <div class="about-block-custom" id="about-network-custom">
+          <div class="about-block-content-custom">
+            <h3>Our Network of Partner Banks</h3>
+            <p>We collaborate with a select group of reputable acquiring banks, offering businesses the flexibility to choose the right financial partner based on their specific needs, industry, and geography.</p>
           </div>
+          <div class="about-connector-custom"></div>
         </div>
       </div>
-      <div class="about-content">
-        <div class="section-header">
-          <h2 class="section-title">About <span>Us</span></h2>
+      
+      <!-- Right side content -->
+      <div class="about-right-custom">
+        <div class="about-block-custom" id="about-mission-custom">
+          <div class="about-connector-custom"></div>
+          <div class="about-block-content-custom">
+            <h3>Our Mission</h3>
+            <p>Our mission is to simplify payment acquiring for businesses by leveraging our extensive network of partner banks. We help merchants optimize their payment infrastructure, ensuring high approval rates, compliance, and cost efficiency.</p>
+          </div>
         </div>
-        <div class="about-text">
-          <h3>Who We Are</h3>
-          <p>
-            We are a trusted partner, enabling businesses to connect with a
-            network of acquiring banks worldwide. Through our partnerships, we
-            help merchants access card acquiring services, global payment
-            processing, and related financial solutions without the complexity
-            of dealing with multiple providers.
-          </p>
-
-          <h3>Our Mission</h3>
-          <p>
-            Our mission is to simplify payment acquiring for businesses by
-            leveraging our extensive network of partner banks. We help
-            merchants optimize their payment infrastructure, ensuring high
-            approval rates, compliance, and cost efficiency.
-          </p>
-
-          <h3>Our Network of Partner Banks</h3>
-          <p>
-            We collaborate with a select group of reputable acquiring banks,
-            offering businesses the flexibility to choose the right financial
-            partner based on their specific needs, industry, and geography.
-          </p>
+        <div class="about-block-custom" id="about-addon-custom">
+          <div class="about-connector-custom"></div>
+          <div class="about-block-content-custom">
+            <h3>Card title</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque sit magni reprehenderit ratione nihil officiis voluptate. Quidem aliquid dolore asperiores enim, ut, nobis perferendis, libero quae sed eos recusandae.</p>
+          </div>
         </div>
+        <!-- Image card moved back to right side -->
+        <!-- <div class="about-block-custom" id="about-image-custom">
+          <div class="about-connector-custom"></div>
+          <div class="about-image-card-custom">
+            <img src="https://i.ibb.co/b5p17SY3/f8e71b0b-2c67-4a45-a785-c942ad59e285.jpg" alt="Banking Partners">
+            <div class="about-image-overlay-custom">
+              <h3>Our Banking Network</h3>
+              <p>We collaborate with leading financial institutions worldwide to provide you with the best acquiring solutions.</p>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Services Section -->
   <section class="services" id="services">
@@ -708,7 +742,10 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/benefits.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 

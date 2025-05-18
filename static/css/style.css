@@ -188,10 +188,13 @@ img {
 
 .logo {
   font-family: "Epilogue", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+  background: linear-gradient(135deg, #b57edc, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 24px;
 }
+
 
 .logo i {
   font-size: 40px;
@@ -199,6 +202,10 @@ img {
 
 .logo span {
   color: var(--primary);
+}
+
+.navbar.scrolled .nav-links{
+  color: #fff;
 }
 
 .nav-links {
@@ -231,6 +238,13 @@ img {
   cursor: pointer;
   font-size: 24px;
 }
+
+.navbar.scrolled {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
+}
+
 
 /* Hero Section */
 .hero {
@@ -1862,7 +1876,7 @@ img {
   }
 
   .navbar {
-    height: 70px;
+    /* height: 70px; */
     padding: 15px 0;
   }
 
@@ -1933,7 +1947,7 @@ img {
   }
 
   .navbar {
-    height: 60px;
+    /* height: 60px; */
     padding: 10px 0;
   }
 
@@ -2223,9 +2237,15 @@ img {
 }
 
 .section-title {
-  font-size: 24px;
-  color: white;
+  font-size: 2rem;
   margin-bottom: 15px;
+}
+
+.partners-section .section-title span {
+  background: linear-gradient(to right, #6c5ce7, #ffa3a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Marquee Styles */
