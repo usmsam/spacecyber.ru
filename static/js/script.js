@@ -106,44 +106,71 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Hero Section Slider
+  // function initHeroSlider() {
+  //   const slides = document.querySelectorAll(".bg-slide");
+  //   const rotatingText = document.querySelector(".rotating-text");
+  //   const words = rotatingText.getAttribute("data-words").split(",");
+  //   let currentIndex = 0;
+  //   const colors = ['#6c5ce7', '#fdcb6e', '#d63031'];
+
+  //   // Initial setup
+  //   slides[0].classList.add("active");
+  //   rotatingText.textContent = words[0];
+  //   rotatingText.style.color = colors[0];
+
+  //   function changeSlide() {
+  //     // Remove active class from current slide
+  //     slides[currentIndex].classList.remove("active");
+      
+  //     // Fade out text
+  //     rotatingText.classList.add("fade-out");
+      
+  //     setTimeout(() => {
+  //       // Update index
+  //       currentIndex = (currentIndex + 1) % slides.length;
+        
+  //       // Add active class to new slide
+  //       slides[currentIndex].classList.add("active");
+        
+  //       // Update text and color
+  //       rotatingText.textContent = words[currentIndex];
+  //       rotatingText.style.color = colors[currentIndex];
+        
+  //       // Remove fade-out class to trigger fade-in
+  //       rotatingText.classList.remove("fade-out");
+  //     }, 500); // Match this with CSS transition time
+  //   }
+
+  //   // Start the slider
+  //   setInterval(changeSlide, 5000);
+  // }
   function initHeroSlider() {
     const slides = document.querySelectorAll(".bg-slide");
-    const rotatingText = document.querySelector(".rotating-text");
-    const words = rotatingText.getAttribute("data-words").split(",");
+    const rotatingTexts = document.querySelectorAll(".rotating-text");
     let currentIndex = 0;
-    const colors = ['#6c5ce7', '#fdcb6e', '#d63031'];
-
-    // Initial setup
-    slides[0].classList.add("active");
-    rotatingText.textContent = words[0];
-    rotatingText.style.color = colors[0];
-
+  
+    // Скрываем все rotating-text
+    rotatingTexts.forEach(el => {
+      el.style.display = 'none';
+    });
+  
+    // Показываем первый
+    slides[0]?.classList.add("active");
+    rotatingTexts[0].style.display = 'inline-block';
+  
     function changeSlide() {
-      // Remove active class from current slide
-      slides[currentIndex].classList.remove("active");
-      
-      // Fade out text
-      rotatingText.classList.add("fade-out");
-      
-      setTimeout(() => {
-        // Update index
-        currentIndex = (currentIndex + 1) % slides.length;
-        
-        // Add active class to new slide
-        slides[currentIndex].classList.add("active");
-        
-        // Update text and color
-        rotatingText.textContent = words[currentIndex];
-        rotatingText.style.color = colors[currentIndex];
-        
-        // Remove fade-out class to trigger fade-in
-        rotatingText.classList.remove("fade-out");
-      }, 500); // Match this with CSS transition time
+      slides[currentIndex]?.classList.remove("active");
+      rotatingTexts[currentIndex].style.display = 'none';
+  
+      currentIndex = (currentIndex + 1) % rotatingTexts.length;
+  
+      slides[currentIndex]?.classList.add("active");
+      rotatingTexts[currentIndex].style.display = 'inline-block';
     }
-
-    // Start the slider
+  
     setInterval(changeSlide, 5000);
   }
+  
 
   // Initialize hero slider
   if (document.querySelector(".hero")) {
@@ -206,13 +233,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // About section animation
   function animateAboutSection() {
-    const aboutSection = document.querySelector('.about');
-    const aboutPosition = aboutSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.3;
+    // const aboutSection = document.querySelector('.about');
+    // const aboutPosition = aboutSection.getBoundingClientRect().top;
+    // const screenPosition = window.innerHeight / 1.3;
 
-    if (aboutPosition < screenPosition) {
-      aboutSection.classList.add('animated');
-    }
+    // if (aboutPosition < screenPosition) {
+    //   aboutSection.classList.add('animated');
+    // }
   }
 
   // Запускаем при загрузке
@@ -251,46 +278,46 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Scroll reveal animations
-const scrollReveal = ScrollReveal({
-  origin: "bottom",
-  distance: "60px",
-  duration: 1000,
-  delay: 200,
-  reset: false,
-  viewFactor: 0.2
-});
+// const scrollReveal = ScrollReveal({
+//   origin: "bottom",
+//   distance: "60px",
+//   duration: 1000,
+//   delay: 200,
+//   reset: false,
+//   viewFactor: 0.2
+// });
 
-// Hero section
-scrollReveal.reveal(".hero-content", {
-  delay: 300,
-  distance: "100px",
-  origin: "left"
-});
+// // Hero section
+// scrollReveal.reveal(".hero-content", {
+//   delay: 300,
+//   distance: "100px",
+//   origin: "left"
+// });
 
-// Other sections
-scrollReveal.reveal(".section-header", {
-  delay: 200,
-  distance: "60px"
-});
+// // Other sections
+// scrollReveal.reveal(".section-header", {
+//   delay: 200,
+//   distance: "60px"
+// });
 
-scrollReveal.reveal(".benefit-card, .service-card, .why-card, .blog-card", {
-  interval: 150
-});
+// scrollReveal.reveal(".benefit-card, .service-card, .why-card, .blog-card", {
+//   interval: 150
+// });
 
-scrollReveal.reveal(".about-image, .about-content", {
-  interval: 200,
-  distance: "100px"
-});
+// scrollReveal.reveal(".about-image, .about-content", {
+//   interval: 200,
+//   distance: "100px"
+// });
 
-scrollReveal.reveal(".tab-content", {
-  distance: "100px",
-  origin: "right"
-});
+// scrollReveal.reveal(".tab-content", {
+//   distance: "100px",
+//   origin: "right"
+// });
 
-scrollReveal.reveal(".contact-content, .contact-info", {
-  interval: 200,
-  distance: "100px"
-});
+// scrollReveal.reveal(".contact-content, .contact-info", {
+//   interval: 200,
+//   distance: "100px"
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
   // Улучшенный эффект zoom для изображений
