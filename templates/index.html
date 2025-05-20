@@ -17,7 +17,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
-      <a href="#home" class="logo"><i>Nerion</i></a>
+      <img class="logo" height="30px" src="{{ url_for('static', filename='images/logo.png') }}" />
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#benefits">Benefits</a>
@@ -240,54 +241,61 @@
     </div>
   </section>
 
-<!-- About Section -->
-<section class="about-section-custom" id="about-section-custom">
-  <div class="about-container-custom">
-    <div class="about-header-custom">
-      <h2 class="about-title-custom">About <span>Us</span></h2>
-    </div>
-    
-    <div class="about-content-custom">
-      <!-- Central axis -->
-      <div class="about-central-axis-custom"></div>
-      
-      <!-- Left side content -->
-      <div class="about-left-custom">
-        <div class="about-block-custom" id="about-who-custom">
-          <div class="about-block-content-custom">
-            <h3>Who We Are</h3>
-            <p>We are a trusted partner, enabling businesses to connect with a network of acquiring banks worldwide. Through our partnerships, we help merchants access card acquiring services, global payment processing, and related financial solutions without the complexity of dealing with multiple providers.</p>
-          </div>
-          <div class="about-connector-custom"></div>
-        </div>
-        
-        <div class="about-block-custom" id="about-network-custom">
-          <div class="about-block-content-custom">
-            <h3>Our Network of Partner Banks</h3>
-            <p>We collaborate with a select group of reputable acquiring banks, offering businesses the flexibility to choose the right financial partner based on their specific needs, industry, and geography.</p>
-          </div>
-          <div class="about-connector-custom"></div>
-        </div>
+  <!-- About Section -->
+  <section class="about-section-custom" id="about-section-custom">
+    <div class="about-container-custom">
+      <div class="about-header-custom">
+        <h2 class="about-title-custom">About <span>Us</span></h2>
       </div>
-      
-      <!-- Right side content -->
-      <div class="about-right-custom">
-        <div class="about-block-custom" id="about-mission-custom">
-          <div class="about-connector-custom"></div>
-          <div class="about-block-content-custom">
-            <h3>Our Mission</h3>
-            <p>Our mission is to simplify payment acquiring for businesses by leveraging our extensive network of partner banks. We help merchants optimize their payment infrastructure, ensuring high approval rates, compliance, and cost efficiency.</p>
+
+      <div class="about-content-custom">
+        <!-- Central axis -->
+        <div class="about-central-axis-custom"></div>
+
+        <!-- Left side content -->
+        <div class="about-left-custom">
+          <div class="about-block-custom" id="about-who-custom">
+            <div class="about-block-content-custom">
+              <h3>Who We Are</h3>
+              <p>We are a trusted partner, enabling businesses to connect with a network of acquiring banks worldwide.
+                Through our partnerships, we help merchants access card acquiring services, global payment processing,
+                and related financial solutions without the complexity of dealing with multiple providers.</p>
+            </div>
+            <div class="about-connector-custom"></div>
+          </div>
+
+          <div class="about-block-custom" id="about-network-custom">
+            <div class="about-block-content-custom">
+              <h3>Our Network of Partner Banks</h3>
+              <p>We collaborate with a select group of reputable acquiring banks, offering businesses the flexibility to
+                choose the right financial partner based on their specific needs, industry, and geography.</p>
+            </div>
+            <div class="about-connector-custom"></div>
           </div>
         </div>
-        <div class="about-block-custom" id="about-addon-custom">
-          <div class="about-connector-custom"></div>
-          <div class="about-block-content-custom">
-            <h3>Card title</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque sit magni reprehenderit ratione nihil officiis voluptate. Quidem aliquid dolore asperiores enim, ut, nobis perferendis, libero quae sed eos recusandae.</p>
+
+        <!-- Right side content -->
+        <div class="about-right-custom">
+          <div class="about-block-custom" id="about-mission-custom">
+            <div class="about-connector-custom"></div>
+            <div class="about-block-content-custom">
+              <h3>Our Mission</h3>
+              <p>Our mission is to simplify payment acquiring for businesses by leveraging our extensive network of
+                partner banks. We help merchants optimize their payment infrastructure, ensuring high approval rates,
+                compliance, and cost efficiency.</p>
+            </div>
           </div>
-        </div>
-        <!-- Image card moved back to right side -->
-        <!-- <div class="about-block-custom" id="about-image-custom">
+          <div class="about-block-custom" id="about-addon-custom">
+            <div class="about-connector-custom"></div>
+            <div class="about-block-content-custom">
+              <h3>Card title</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque sit magni reprehenderit
+                ratione nihil officiis voluptate. Quidem aliquid dolore asperiores enim, ut, nobis perferendis, libero
+                quae sed eos recusandae.</p>
+            </div>
+          </div>
+          <!-- Image card moved back to right side -->
+          <!-- <div class="about-block-custom" id="about-image-custom">
           <div class="about-connector-custom"></div>
           <div class="about-image-card-custom">
             <img src="https://i.ibb.co/b5p17SY3/f8e71b0b-2c67-4a45-a785-c942ad59e285.jpg" alt="Banking Partners">
@@ -297,10 +305,10 @@
             </div>
           </div>
         </div> -->
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Services Section -->
   <section class="services" id="services">
@@ -613,7 +621,7 @@
   </section>
 
   <!-- Blog Preview Section -->
-  <section class="blog-preview" id="insights">
+  <!-- <section class="blog-preview" id="insights">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Latest <span>Insights</span></h2>
@@ -681,7 +689,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="footer">
