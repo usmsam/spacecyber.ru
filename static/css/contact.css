@@ -1,0 +1,190 @@
+/* Contact Form - Isolated Styles */
+.cf-contact-section {
+	background: linear-gradient(135deg, #ffffff, #6c5ce7) !important;
+	padding: 80px 0 !important;
+	min-height: auto !important;
+	display: block !important;
+	position: relative !important;
+	box-sizing: border-box !important;
+	font-family: Arial, sans-serif !important;
+}
+
+.cf-container {
+	max-width: 800px !important;
+	margin: 0 auto !important;
+	padding: 0 20px !important;
+	box-sizing: border-box !important;
+}
+
+.cf-contact-content {
+	width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+.cf-section-header {
+	text-align: center !important;
+	margin-bottom: 50px !important;
+}
+
+.cf-section-title {
+	font-size: 3rem !important;
+	font-weight: bold !important;
+	margin: 0 0 15px 0 !important;
+	color: #2d3436 !important;
+	line-height: 1.2 !important;
+	font-family: Arial, sans-serif !important;
+}
+
+.cf-highlight {
+	color: #6c5ce7 !important;
+}
+
+.cf-section-subtitle {
+	font-size: 1.2rem !important;
+	color: #636e72 !important;
+	max-width: 600px !important;
+	margin: 0 auto !important;
+	line-height: 1.6 !important;
+	font-family: Arial, sans-serif !important;
+}
+
+.cf-contact-form {
+	background: white !important;
+	padding: 40px !important;
+	border-radius: 15px !important;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+	box-sizing: border-box !important;
+	position: relative !important;
+}
+
+.cf-form-group {
+	margin-bottom: 25px !important;
+	box-sizing: border-box !important;
+}
+
+.cf-label {
+	display: block !important;
+	margin-bottom: 8px !important;
+	font-weight: 500 !important;
+	color: #2d3436 !important;
+	font-size: 14px !important;
+	font-family: Arial, sans-serif !important;
+	line-height: 1.4 !important;
+}
+
+.cf-input,
+.cf-select {
+	width: 100% !important;
+	padding: 12px 16px !important;
+	border: 1px solid #e0e0e0 !important;
+	border-radius: 10px !important;
+	font-family: Arial, sans-serif !important;
+	font-size: 16px !important;
+	transition: all 0.3s ease !important;
+	background-color: #f9f9f9 !important;
+	height: 48px !important;
+	box-sizing: border-box !important;
+	outline: none !important;
+	color: #2d3436 !important;
+}
+
+.cf-input:focus,
+.cf-select:focus {
+	border-color: #6c5ce7 !important;
+	background-color: white !important;
+	box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1) !important;
+	transform: translateY(-1px) !important;
+}
+
+.cf-input:hover,
+.cf-select:hover {
+	border-color: #6c5ce7 !important;
+	background-color: white !important;
+}
+
+.cf-btn-primary {
+	width: 100% !important;
+	padding: 15px 30px !important;
+	background: linear-gradient(135deg, #6c5ce7, #5b4cdb) !important;
+	color: white !important;
+	border: none !important;
+	border-radius: 10px !important;
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	cursor: pointer !important;
+	transition: all 0.3s ease !important;
+	height: 50px !important;
+	box-sizing: border-box !important;
+	font-family: Arial, sans-serif !important;
+}
+
+.cf-btn-primary:hover {
+	transform: translateY(-2px) !important;
+	box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3) !important;
+	opacity: 0.95 !important;
+}
+
+.cf-btn-primary:active {
+	transform: translateY(0) !important;
+}
+
+.cf-success-message {
+	background: #d4edda !important;
+	color: #155724 !important;
+	padding: 15px !important;
+	border-radius: 10px !important;
+	margin-bottom: 20px !important;
+	border: 1px solid #c3e6cb !important;
+	display: none !important;
+	font-family: Arial, sans-serif !important;
+	box-sizing: border-box !important;
+}
+
+.cf-success-message.cf-show {
+	display: block !important;
+	animation: cfSlideIn 0.3s ease !important;
+}
+
+@keyframes cfSlideIn {
+	from {
+			opacity: 0;
+			transform: translateY(-10px);
+	}
+	to {
+			opacity: 1;
+			transform: translateY(0);
+	}
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.cf-contact-section {
+			padding: 40px 0 !important;
+	}
+	
+	.cf-section-title {
+			font-size: 2.5rem !important;
+	}
+	
+	.cf-contact-form {
+			padding: 30px 20px !important;
+	}
+	
+	.cf-container {
+			padding: 0 15px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.cf-section-title {
+			font-size: 2rem !important;
+	}
+	
+	.cf-section-subtitle {
+			font-size: 1rem !important;
+	}
+	
+	.cf-contact-form {
+			padding: 25px 15px !important;
+	}
+}

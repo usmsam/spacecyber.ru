@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/benefits.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -41,7 +43,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
-      <img class="logo" height="30px" src="{{ url_for('static', filename='images/logo.png') }}" />
+      <img class="logo" height="30px" src="{{ url_for('static', filename='images/logo-n.png') }}" />
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#benefits">Benefits</a>
@@ -60,7 +62,11 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-background">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="{{ url_for('static', filename='images/hero.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- <div class="hero-background">
       <div class="bg-slide active"
         style="background-image: url('{{ url_for('static', filename='images/hero-1.jpg') }}')">
       </div>
@@ -69,7 +75,7 @@
       <div class="bg-slide" style="background-image: url('{{ url_for('static', filename='images/hero-3.jpg') }}')">
       </div>
       <div class="bg-overlay"></div>
-    </div>
+    </div> -->
 
     <div class="container hero-container">
       <div class="hero-content">
@@ -95,7 +101,7 @@
         </div>
       </div>
     </div>
-    
+
 
     <div class="scroll-down">
       <div class="mouse">
@@ -314,75 +320,6 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Our <span>Services</span></h2>
-        <p class="section-subtitle">
-          Comprehensive payment acquiring solutions
-        </p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-credit-card"></i>
-          </div>
-          <h3>Acquiring & Payment Processing</h3>
-          <p>
-            We connect businesses with acquiring banks that provide card
-            acceptance, multi-currency payment solutions, and support for
-            alternative payment methods.
-          </p>
-          <div class="service-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-user-shield"></i>
-          </div>
-          <h3>Risk & Compliance Solutions</h3>
-          <p>
-            Our partner banks ensure robust risk management, fraud prevention,
-            and compliance with international regulations, including KYC and
-            AML requirements.
-          </p>
-          <div class="service-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <h3>Customized Payment Solutions</h3>
-          <p>
-            Through our banking network, we provide tailored acquiring
-            solutions for high-growth businesses, including e-commerce,
-            fintech, and high-risk industries.
-          </p>
-          <div class="service-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-exchange-alt"></i>
-          </div>
-          <h3>Cross-Border Payment Services</h3>
-          <p>
-            Our partner banks facilitate smooth cross-border transactions,
-            ensuring businesses can scale internationally with ease.
-          </p>
-          <div class="service-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Industries Section -->
   <section class="industries" id="industries">
     <div class="container">
@@ -518,6 +455,103 @@
     </div>
   </section>
 
+  <!-- Services Section -->
+  <section class="payment-services-section" id="services">
+    <div class="payment-services-container">
+      <div class="payment-services-header">
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <p class="payment-services-subtitle">
+          Comprehensive payment acquiring solutions
+        </p>
+      </div>
+
+      <div class="payment-services-accordion">
+        <div class="payment-accordion-item">
+          <div class="payment-accordion-header" onclick="togglePaymentAccordion(this)">
+            <div class="payment-header-content">
+              <div class="payment-service-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h3 class="payment-service-title">Acquiring & Payment Processing</h3>
+            </div>
+            <div class="payment-toggle-icon">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="payment-accordion-content">
+            <p class="payment-service-description">
+              We connect businesses with acquiring banks that provide card
+              acceptance, multi-currency payment solutions, and support for
+              alternative payment methods.
+            </p>
+          </div>
+        </div>
+
+        <div class="payment-accordion-item">
+          <div class="payment-accordion-header" onclick="togglePaymentAccordion(this)">
+            <div class="payment-header-content">
+              <div class="payment-service-icon">
+                <i class="fas fa-user-shield"></i>
+              </div>
+              <h3 class="payment-service-title">Risk & Compliance Solutions</h3>
+            </div>
+            <div class="payment-toggle-icon">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="payment-accordion-content">
+            <p class="payment-service-description">
+              Our partner banks ensure robust risk management, fraud prevention,
+              and compliance with international regulations, including KYC and
+              AML requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="payment-accordion-item">
+          <div class="payment-accordion-header" onclick="togglePaymentAccordion(this)">
+            <div class="payment-header-content">
+              <div class="payment-service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3 class="payment-service-title">Customized Payment Solutions</h3>
+            </div>
+            <div class="payment-toggle-icon">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="payment-accordion-content">
+            <p class="payment-service-description">
+              Through our banking network, we provide tailored acquiring
+              solutions for high-growth businesses, including e-commerce,
+              fintech, and high-risk industries.
+            </p>
+          </div>
+        </div>
+
+        <div class="payment-accordion-item">
+          <div class="payment-accordion-header" onclick="togglePaymentAccordion(this)">
+            <div class="payment-header-content">
+              <div class="payment-service-icon">
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+              <h3 class="payment-service-title">Cross-Border Payment Services</h3>
+            </div>
+            <div class="payment-toggle-icon">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="payment-accordion-content">
+            <p class="payment-service-description">
+              Our partner banks facilitate smooth cross-border transactions,
+              ensuring businesses can scale internationally with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Choose Us Section -->
   <section class="why-choose" id="why-choose">
     <div class="container">
@@ -587,27 +621,38 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-content">
-        <div class="section-header">
+  <section class="cf-contact-section" id="cf-contact">
+    <div class="cf-container">
+      <div class="cf-contact-content">
+        <div class="cf-section-header">
           <h2 class="section-title">Get in <span>Touch</span></h2>
-          <p class="section-subtitle">
+          <p class="cf-section-subtitle">
             Have questions or need assistance? Reach out to us today.
           </p>
         </div>
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required />
+        <form class="cf-contact-form" id="cfContactForm">
+          <div class="cf-success-message" id="cfSuccessMessage">
+            Thank you! Your message has been sent successfully.
           </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required />
+
+          <div class="cf-form-group">
+            <label for="cf-name" class="cf-label">Your Name</label>
+            <input type="text" id="cf-name" name="name" class="cf-input" required />
           </div>
-          <div class="form-group">
-            <input type="text" placeholder="Company Name" />
+
+          <div class="cf-form-group">
+            <label for="cf-email" class="cf-label">Your Email</label>
+            <input type="email" id="cf-email" name="email" class="cf-input" required />
           </div>
-          <div class="form-group">
-            <select>
+
+          <div class="cf-form-group">
+            <label for="cf-company" class="cf-label">Company Name</label>
+            <input type="text" id="cf-company" name="company" class="cf-input" />
+          </div>
+
+          <div class="cf-form-group">
+            <label for="cf-service" class="cf-label">Service Interest</label>
+            <select id="cf-service" name="service" class="cf-select">
               <option value="">What are you interested in?</option>
               <option value="acquiring">Payment Acquiring</option>
               <option value="processing">Payment Processing</option>
@@ -615,15 +660,12 @@
               <option value="other">Other Services</option>
             </select>
           </div>
-          <div class="form-group">
-            <textarea placeholder="Your Message" rows="5"></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Send Message</button>
+
+          <button type="submit" class="cf-btn-primary">Send Message</button>
         </form>
       </div>
     </div>
   </section>
-
   <!-- Blog Preview Section -->
   <!-- <section class="blog-preview" id="insights">
     <div class="container">
@@ -754,11 +796,14 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   <script src="{{ url_for('static', filename='js/benefits.js') }}"></script>
   <script src="{{ url_for('static', filename='js/about.js') }}"></script>
   <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="{{ url_for('static', filename='js/services.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
 </body>
 
 </html>
