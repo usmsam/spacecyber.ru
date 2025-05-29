@@ -249,12 +249,15 @@ img {
   padding: 15px 0;
 }
 
+.navbar.scrolled i {
+  color: white
+}
+
 
 /* Hero Section */
 .hero {
   position: relative;
-  height: calc(100vh - 80px);
-  min-height: 600px;
+  height: 100vh;
   margin-top: -80px;
   padding-top: 80px;
   display: flex;
@@ -262,6 +265,7 @@ img {
   overflow: hidden;
   z-index: 1;
 }
+
 .hero-video {
   position: absolute;
   top: 0;
@@ -1052,7 +1056,7 @@ img {
 
 /* Why Choose Us Section */
 .why-choose {
-  background:linear-gradient(60deg, #fdcb6e, #6c5ce7);
+  background: linear-gradient(60deg, #fdcb6e, #6c5ce7);
   color: white;
   position: relative;
   overflow: hidden;
@@ -2192,7 +2196,7 @@ img {
 .section-title {
   font-size: 3rem;
   margin-bottom: 15px;
-  
+
 }
 
 .section-title span {
@@ -2212,7 +2216,7 @@ img {
 .marquee__content {
   display: flex;
   align-items: center;
-  animation: scroll 30s linear infinite;
+  animation: scrollY 30s linear infinite;
   width: max-content;
 }
 
@@ -2231,7 +2235,7 @@ img {
   opacity: 1;
 }
 
-@keyframes scroll {
+@keyframes scrollY {
   0% {
     transform: translateX(0);
   }
