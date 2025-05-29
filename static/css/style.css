@@ -228,8 +228,10 @@ img {
   color: white
 }
 
-.navbar.scrolled .nav-links {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+@media screen and (max-width: 768px) {
+  .navbar.scrolled .nav-links {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  }
 }
 
 
