@@ -921,6 +921,10 @@ img {
   background: linear-gradient(130deg, #00b894, #6c5ce7);
 }
 
+.industries .section-title{
+  color: white;
+}
+
 .tab-buttons {
   display: flex;
   justify-content: center;

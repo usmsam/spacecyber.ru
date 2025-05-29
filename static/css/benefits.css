@@ -166,7 +166,7 @@
 }
 
 .benefit-1::after {
-  border-radius: 70% 30% 50% 70% / 60% 30% 70% 40%;
+  /* border-radius: 70% 30% 50% 70% / 60% 30% 70% 40%; */
   background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(255, 107, 107, 0.1));
   box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2);
   border: 1px solid rgba(255, 107, 107, 0.3);
@@ -181,7 +181,7 @@
 }
 
 .benefit-2::after {
-  border-radius: 20% 80% 40% 60% / 50% 30% 70% 50%;
+  /* border-radius: 20% 80% 40% 60% / 50% 30% 70% 50%; */
   background: linear-gradient(135deg, rgba(79, 172, 254, 0.2), rgba(79, 172, 254, 0.1));
   box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
   border: 1px solid rgba(79, 172, 254, 0.3);
@@ -196,7 +196,7 @@
 }
 
 .benefit-3::after {
-  border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  /* border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; */
   background: linear-gradient(135deg, rgba(67, 233, 123, 0.2), rgba(67, 233, 123, 0.1));
   box-shadow: 0 10px 30px rgba(67, 233, 123, 0.2);
   border: 1px solid rgba(67, 233, 123, 0.3);
@@ -211,7 +211,7 @@
 }
 
 .benefit-4::after {
-  border-radius: 80% 20% 60% 40% / 40% 60% 30% 70%;
+  /* border-radius: 80% 20% 60% 40% / 40% 60% 30% 70%; */
   background: linear-gradient(135deg, rgba(250, 112, 154, 0.2), rgba(250, 112, 154, 0.1));
   box-shadow: 0 10px 30px rgba(250, 112, 154, 0.2);
   border: 1px solid rgba(250, 112, 154, 0.3);
