@@ -151,7 +151,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   z-index: 1; /* Ensure content is above the ::after element */
   transition: transform 0.3s ease;
 }
@@ -161,7 +161,6 @@
   top: 10%;
   left: 5%;
   width: 320px;
-  height: 180px;
   animation: float-gentle 6s ease-in-out infinite;
 }
 
@@ -176,7 +175,6 @@
   top: 15%;
   right: 5%;
   width: 300px;
-  height: 190px;
   animation: float-gentle 7s ease-in-out infinite 1s;
 }
 
@@ -191,7 +189,6 @@
   bottom: 15%;
   left: 8%;
   width: 310px;
-  height: 170px;
   animation: float-gentle 8s ease-in-out infinite 0.5s;
 }
 
@@ -206,7 +203,6 @@
   bottom: 10%;
   right: 8%;
   width: 290px;
-  height: 180px;
   animation: float-gentle 7.5s ease-in-out infinite 1.5s;
 }
 
